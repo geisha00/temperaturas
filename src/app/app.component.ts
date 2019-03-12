@@ -8,10 +8,10 @@ import { Ciudad } from './ciudad';
 })
 export class AppComponent {
   title = 'temperatura';
-  public ciudades:Array<Ciudad>=[];
+  public pepito:Array<Ciudad>=[];
 
   public AgregarCiudad(nombre: string): void {
-  this.ciudades.push({
+  this.pepito.push({
     nombre:nombre,
     temperatura:{
       valor:20,
@@ -19,7 +19,5 @@ export class AppComponent {
     }
   });
   
-  console.log(this.ciudades);
-
   }
 }
